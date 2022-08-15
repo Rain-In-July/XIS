@@ -1,7 +1,7 @@
 from industry import IndustrySecondary, TileLocationChecks
 
 industry = IndustrySecondary(id='herding_coop',
-                             processed_cargos_and_output_ratios=[('PHOS', 6), ('COAL', 4)],
+                             processed_cargos_and_output_ratios=[('OSND', 6), ('COAL', 4)],
                              prod_cargo_types=[('OIL_', 6), ('SULP', 2)],
                              prob_in_game='3',
                              prob_random='5',

@@ -209,8 +209,8 @@ digraph the_lot {
         
     
         
-            C_phosphate [shape="ellipse" label="Oil Sands" href="cargos.html#phosphate" target="_top" fontname="sans-serif"
-                id="phosphate"
+            C_oil_sands [shape="ellipse" label="Oil Sands" href="cargos.html#oil_sands" target="_top" fontname="sans-serif"
+                id="oil_sands"
             ]
         
     
@@ -2287,7 +2287,7 @@ digraph the_lot {
             
         
             
-                C_phosphate -> I_herding_coop [weight="2" tooltip="Oil Sands -> Oil Extractor"]
+                C_oil_sands -> I_herding_coop [weight="2" tooltip="Oil Sands -> Oil Extractor"]
             
             
         
@@ -2390,7 +2390,7 @@ digraph the_lot {
         
         
             
-                I_phosphate_mine -> C_phosphate [weight="1" tooltip="Oil Sands Mine -> Oil Sands"]
+                I_phosphate_mine -> C_oil_sands [weight="1" tooltip="Oil Sands Mine -> Oil Sands"]
             
             
         

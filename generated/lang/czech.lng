@@ -63,7 +63,7 @@ STR_CARGO_NAME_MILK                                                             
 STR_CARGO_NAME_MANGANESE                                                        :Mangan
 STR_CARGO_NAME_NITRATES                                                         :Nitráty
 STR_CARGO_NAME_NUTS                                                             :Ořechy
-STR_CARGO_NAME_OILSANDS                                                         :Ropné písky
+STR_CARGO_NAME_OIL_SANDS                                                         :Ropné písky
 STR_CARGO_NAME_PACKAGING                                                        :Obaly
 STR_CARGO_NAME_PEAT                                                             :Biomasa
 STR_CARGO_NAME_PETROL                                                           :Ropná paliva
@@ -122,6 +122,7 @@ STR_CARGO_UNIT_MILK                                                             
 STR_CARGO_UNIT_NICKEL                                                           :{WEIGHT} niklu
 STR_CARGO_UNIT_NITRATES                                                         :{WEIGHT}nitrátů
 STR_CARGO_UNIT_NUTS                                                             :{SIGNED_WORD} pyt{P 0 el le lů} ořechů
+STR_CARGO_UNIT_OIL_SANDS                                                        :{WEIGHT} ropných písků
 STR_CARGO_UNIT_PACKAGING                                                        :{WEIGHT} obalů
 STR_CARGO_UNIT_PEAT                                                             :{WEIGHT} biomasy
 STR_CARGO_UNIT_PETROL                                                           :{VOLUME} ropných paliv
@@ -178,6 +179,7 @@ STR_CID_MILK                                                                    
 STR_CID_NICKEL                                                                  :{TINYFONT}NK
 STR_CID_NITRATES                                                                :{TINYFONT}NI
 STR_CID_NUTS                                                                    :{TINYFONT}NT
+STR_CID_OIL_SANDS                                                               :{TINYFONT}OS
 STR_CID_PACKAGING                                                               :{TINYFONT}PK
 STR_CID_PEAT                                                                    :{TINYFONT}BM
 STR_CID_PETROL                                                                  :{TINYFONT}PT
@@ -272,7 +274,7 @@ STR_IND_METAL_WORKSHOP                                                          
 STR_IND_MIXEDFARM                                                               :Smíšená farma
 STR_IND_NITRATE_MINE                                                            :Důl na nitráty
 STR_IND_ORCHARD_PIGGERY                                                         :Sad a vepřín
-STR_IND_OIL_SANDS_MINE                                                          :Důl na ropné písky
+STR_IND_PHOSPHATE_MINE                                                          :Důl na ropné písky
 STR_IND_PEATLANDS                                                               :Rašeliniště
 STR_IND_PETROLPUMP                                                              :Čerpací stanice
 STR_IND_PHOSPHATE_MINE                                                          :Fosfátový důl

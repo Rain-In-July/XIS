@@ -61,7 +61,7 @@ STR_CARGO_NAME_MILK                                                             
 STR_CARGO_NAME_MANGANESE                                                        :Manganese
 STR_CARGO_NAME_NITRATES                                                         :Nitrates
 STR_CARGO_NAME_NUTS                                                             :Nuts
-STR_CARGO_NAME_OILSANDS															:Oil Sands
+STR_CARGO_NAME_OIL_SANDS								            :Oil Sands
 STR_CARGO_NAME_PACKAGING                                                        :Packaging
 STR_CARGO_NAME_PEAT                                                             :Biomass
 STR_CARGO_NAME_PETROL                                                           :Petroleum Fuels
@@ -120,6 +120,7 @@ STR_CARGO_UNIT_MILK                                                             
 STR_CARGO_UNIT_NICKEL                                                           :{WEIGHT} of nickel
 STR_CARGO_UNIT_NITRATES                                                         :{WEIGHT} of nitrates
 STR_CARGO_UNIT_NUTS                                                             :{SIGNED_WORD} sack{P 0 "" s}  of nuts
+STR_CARGO_UNIT_OIL_SANDS                                                        :{WEIGHT} of oil sands
 STR_CARGO_UNIT_PACKAGING                                                        :{WEIGHT} of packaging
 STR_CARGO_UNIT_PEAT                                                             :{WEIGHT} of biomass
 STR_CARGO_UNIT_PETROL                                                           :{VOLUME} of petroleum fuels
@@ -176,6 +177,7 @@ STR_CID_MILK                                                                    
 STR_CID_NICKEL                                                                  :{TINYFONT}NK
 STR_CID_NITRATES                                                                :{TINYFONT}NI
 STR_CID_NUTS                                                                    :{TINYFONT}NT
+STR_CID_OIL_SANDS                                                               :{TINYFONT}OS
 STR_CID_PACKAGING                                                               :{TINYFONT}PK
 STR_CID_PEAT                                                                    :{TINYFONT}BM
 STR_CID_PETROL                                                                  :{TINYFONT}PT

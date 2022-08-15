@@ -41,6 +41,7 @@ cargotable {
         NITR,
         NUTS,
         OIL_,
+        OSND,
         PAPR,
         PASS,
         PEAT,
@@ -3150,7 +3151,7 @@ item(FEAT_CARGOS, manganese_MISTAH_KURTZ, 20) {
         [10 + 20 * 7, 10 + 20 * 1, 10, 10, 0, 0,  "src/graphics/other/cargoicons.png"]
     }
             if (economy==2) {
-item(FEAT_CARGOS, packaging_FIRS, 36) {
+item(FEAT_CARGOS, packaging_FIRS, 37) {
     property {
         type_name: string(STR_CARGO_NAME_PACKAGING);
         unit_name: string(STR_CARGO_NAME_PACKAGING);
@@ -3170,7 +3171,7 @@ item(FEAT_CARGOS, packaging_FIRS, 36) {
         price_factor: 127;
         capacity_multiplier: 1;
         cargo_label: "MNSP";
-        number: 36;
+        number: 37;
     }
     graphics {
         cargoicon_packaging;
@@ -3444,11 +3445,42 @@ item(FEAT_CARGOS, oil_MISTAH_KURTZ, 22) {
     }
 }
             }
+    spriteset(cargoicon_oil_sands) {
+        [10 + 20 * 6, 10 + 20 * 4, 10, 10, 0, 0,  "src/graphics/other/cargoicons.png"]
+    }
+            if (economy==2) {
+item(FEAT_CARGOS, oil_sands_FIRS, 36) {
+    property {
+        type_name: string(STR_CARGO_NAME_OIL_SANDS);
+        unit_name: string(STR_CARGO_NAME_OIL_SANDS);
+        type_abbreviation: string(STR_CID_OIL_SANDS);
+        sprite: NEW_CARGO_SPRITE;
+        weight: 1.0;
+        station_list_colour: 53;
+        cargo_payment_list_colour: 53;
+        is_freight: 1;
+        cargo_classes: bitmask(CC_BULK);
+        town_growth_effect: TOWNGROWTH_NONE;
+        town_growth_multiplier: 1.0;
+        units_of_cargo: 80;
+        items_of_cargo: string(STR_CARGO_UNIT_OIL_SANDS);
+        penalty_lowerbound: 30;
+        single_penalty_length: 255;
+        price_factor: 95;
+        capacity_multiplier: 1;
+        cargo_label: "OSND";
+        number: 36;
+    }
+    graphics {
+        cargoicon_oil_sands;
+    }
+}
+            }
     spriteset(cargoicon_paper) {
         [10 + 20 * 5, 10 + 20 * 2, 10, 10, 0, 0,  "src/graphics/other/cargoicons.png"]
     }
             if (economy==2) {
-item(FEAT_CARGOS, paper_FIRS, 37) {
+item(FEAT_CARGOS, paper_FIRS, 38) {
     property {
         type_name: TTD_STR_CARGO_PLURAL_PAPER;
         unit_name: TTD_STR_CARGO_SINGULAR_PAPER;
@@ -3468,7 +3500,7 @@ item(FEAT_CARGOS, paper_FIRS, 37) {
         price_factor: 140;
         capacity_multiplier: 1;
         cargo_label: "PAPR";
-        number: 37;
+        number: 38;
     }
     graphics {
         cargoicon_paper;
@@ -3678,7 +3710,7 @@ item(FEAT_CARGOS, passengers_MISTAH_KURTZ, 0) {
         [10 + 20 * 6, 10 + 20 * 3, 10, 10, 0, 0,  "src/graphics/other/cargoicons.png"]
     }
             if (economy==2) {
-item(FEAT_CARGOS, peat_FIRS, 38) {
+item(FEAT_CARGOS, peat_FIRS, 39) {
     property {
         type_name: string(STR_CARGO_NAME_PEAT);
         unit_name: string(STR_CARGO_NAME_PEAT);
@@ -3698,7 +3730,7 @@ item(FEAT_CARGOS, peat_FIRS, 38) {
         price_factor: 72;
         capacity_multiplier: 1;
         cargo_label: "PEAT";
-        number: 38;
+        number: 39;
     }
     graphics {
         cargoicon_peat;
@@ -3737,7 +3769,7 @@ item(FEAT_CARGOS, peat_BASIC_ARCTIC, 18) {
         [10 + 20 * 12, 10 + 20 * 1, 10, 10, 0, 0,  "src/graphics/other/cargoicons.png"]
     }
             if (economy==2) {
-item(FEAT_CARGOS, petrol_FIRS, 39) {
+item(FEAT_CARGOS, petrol_FIRS, 40) {
     property {
         type_name: string(STR_CARGO_NAME_PETROL);
         unit_name: string(STR_CARGO_NAME_PETROL);
@@ -3757,7 +3789,7 @@ item(FEAT_CARGOS, petrol_FIRS, 39) {
         price_factor: 143;
         capacity_multiplier: 1;
         cargo_label: "PETR";
-        number: 39;
+        number: 40;
     }
     graphics {
         cargoicon_petrol;
@@ -3823,34 +3855,6 @@ item(FEAT_CARGOS, petrol_MISTAH_KURTZ, 23) {
     spriteset(cargoicon_phosphate) {
         [10 + 20 * 10, 10 + 20 * 2, 10, 10, 0, 0,  "src/graphics/other/cargoicons.png"]
     }
-            if (economy==2) {
-item(FEAT_CARGOS, phosphate_FIRS, 40) {
-    property {
-        type_name: string(STR_CARGO_NAME_PHOSPHATE);
-        unit_name: string(STR_CARGO_NAME_PHOSPHATE);
-        type_abbreviation: string(STR_CID_PHOSPHATE);
-        sprite: NEW_CARGO_SPRITE;
-        weight: 1.0;
-        station_list_colour: 64;
-        cargo_payment_list_colour: 64;
-        is_freight: 1;
-        cargo_classes: bitmask(CC_BULK);
-        town_growth_effect: TOWNGROWTH_NONE;
-        town_growth_multiplier: 1.0;
-        units_of_cargo: 80;
-        items_of_cargo: string(STR_CARGO_UNIT_PHOSPHATE);
-        penalty_lowerbound: 30;
-        single_penalty_length: 255;
-        price_factor: 95;
-        capacity_multiplier: 1;
-        cargo_label: "PHOS";
-        number: 40;
-    }
-    graphics {
-        cargoicon_phosphate;
-    }
-}
-            }
             if (economy==1) {
 item(FEAT_CARGOS, phosphate_BASIC_ARCTIC, 10) {
     property {
@@ -3865,11 +3869,11 @@ item(FEAT_CARGOS, phosphate_BASIC_ARCTIC, 10) {
         cargo_classes: bitmask(CC_BULK);
         town_growth_effect: TOWNGROWTH_NONE;
         town_growth_multiplier: 1.0;
-        units_of_cargo: 80;
+        units_of_cargo: TTD_STR_TONS;
         items_of_cargo: string(STR_CARGO_UNIT_PHOSPHATE);
         penalty_lowerbound: 30;
         single_penalty_length: 255;
-        price_factor: 95;
+        price_factor: 99;
         capacity_multiplier: 1;
         cargo_label: "PHOS";
         number: 10;
@@ -3893,11 +3897,11 @@ item(FEAT_CARGOS, phosphate_MISTAH_KURTZ, 24) {
         cargo_classes: bitmask(CC_BULK);
         town_growth_effect: TOWNGROWTH_NONE;
         town_growth_multiplier: 1.0;
-        units_of_cargo: 80;
+        units_of_cargo: TTD_STR_TONS;
         items_of_cargo: string(STR_CARGO_UNIT_PHOSPHATE);
         penalty_lowerbound: 30;
         single_penalty_length: 255;
-        price_factor: 95;
+        price_factor: 99;
         capacity_multiplier: 1;
         cargo_label: "PHOS";
         number: 24;

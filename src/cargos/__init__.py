@@ -127,6 +127,9 @@ nuts.cargo.register()
 from cargos import oil
 oil.cargo.register()
 
+from cargos import oil_sands
+oil_sands.cargo.register()
+
 from cargos import paper
 paper.cargo.register()
 

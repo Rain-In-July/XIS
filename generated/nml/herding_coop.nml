@@ -769,7 +769,7 @@
         if (economy==2) {
                 item(FEAT_INDUSTRYTILES, herding_coop_tile_1, 144) {
                     property {
-                        accepted_cargos:  [[cargotype("PHOS"), 8],[cargotype("COAL"), 8]];
+                        accepted_cargos:  [[cargotype("OSND"), 8],[cargotype("COAL"), 8]];
                     }
                 }
         }
@@ -1182,21 +1182,9 @@ switch (FEAT_INDUSTRIES, SELF, herding_coop_check_availability, economy) {
         5: herding_coop_check_availability_5;
         3: herding_coop_check_availability_3;
 }
-    switch (FEAT_INDUSTRIES, SELF, herding_coop_min_distance_17, industry_distance(17)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        return CB_RESULT_LOCATION_ALLOW;
-    }
-    switch (FEAT_INDUSTRIES, SELF, herding_coop_min_distance_49, industry_distance(49)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        herding_coop_min_distance_17;
-    }
-    switch (FEAT_INDUSTRIES, SELF, herding_coop_min_distance_14, industry_distance(14)) {
-        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        herding_coop_min_distance_49;
-    }
     switch (FEAT_INDUSTRIES, SELF, herding_coop_min_distance_70, industry_distance(70)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
-        herding_coop_min_distance_14;
+        return CB_RESULT_LOCATION_ALLOW;
     }
     switch (FEAT_INDUSTRIES, SELF, herding_coop_min_distance_73, industry_distance(73)) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
@@ -1210,9 +1198,21 @@ switch (FEAT_INDUSTRIES, SELF, herding_coop_check_availability, economy) {
         0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
         herding_coop_min_distance_51;
     }
+    switch (FEAT_INDUSTRIES, SELF, herding_coop_min_distance_14, industry_distance(14)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        herding_coop_min_distance_0;
+    }
+    switch (FEAT_INDUSTRIES, SELF, herding_coop_min_distance_17, industry_distance(17)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        herding_coop_min_distance_14;
+    }
+    switch (FEAT_INDUSTRIES, SELF, herding_coop_min_distance_49, industry_distance(49)) {
+        0 .. 16: return CB_RESULT_LOCATION_DISALLOW;
+        herding_coop_min_distance_17;
+    }
     switch (FEAT_INDUSTRIES, SELF, herding_coop_min_distance_85, industry_distance(85)) {
         0 .. 56: return CB_RESULT_LOCATION_DISALLOW;
-        herding_coop_min_distance_0;
+        herding_coop_min_distance_49;
     }
     switch (FEAT_INDUSTRIES, SELF, herding_coop_check_location, (
                 (extra_callback_info2 == IND_CREATION_FUND) ||
@@ -1244,7 +1244,7 @@ switch (FEAT_INDUSTRIES, SELF, herding_coop_check_availability, economy) {
                     fund_cost_multiplier: 170;
                     remove_cost_multiplier: 0;
                     remove_cost_multiplier: 0;
-                    accept_cargo_types: [cargotype("PHOS"),cargotype("COAL")];
+                    accept_cargo_types: [cargotype("OSND"),cargotype("COAL")];
                     prod_cargo_types: [cargotype("OIL_"),cargotype("SULP")];
                     nearby_station_name: string(STR_STATION, string(STR_TOWN),string(STR_STATION_UPGRADER));
                 }

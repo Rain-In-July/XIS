@@ -1,7 +1,7 @@
 from industry import IndustryPrimaryExtractive, TileLocationChecks
 
 industry = IndustryPrimaryExtractive(id='phosphate_mine',
-                                     prod_cargo_types=['PHOS'],
+                                     prod_cargo_types=['OSND'],
                                      prob_in_game='4',
                                      prob_random='7',
                                      prod_multiplier='[16, 10]',

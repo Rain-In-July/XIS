@@ -2073,6 +2073,12 @@
         
     }
 
+    #oil_sands ellipse {
+        fill: #D8DBE2;
+        stroke: #D8DBE2;
+        
+    }
+
     #packaging ellipse {
         fill: #D8DBE2;
         stroke: #D8DBE2;
